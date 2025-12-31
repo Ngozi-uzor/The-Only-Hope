@@ -706,6 +706,11 @@
         ::-webkit-scrollbar-thumb:hover {
             background: rgba(80, 100, 140, 0.6);
         }
+
+        /* NEW: Ensure images are visible by default */
+        img {
+            display: block;
+        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -715,19 +720,13 @@
     <div class="container fade-in">
         <header>
             <div class="header-image">
-                <!-- Main header image - PNG VERSION -->
-                <img src="1.png" alt="The Mediterranean Sea at night - a dark, endless expanse where dreams meet their final horizon" 
+                <!-- Main header image - USING YOUR PNG FILE -->
+                <img src="1.png" alt="The Mediterranean Sea at night - a dark, endless expanse where dreams meet their horizon" 
                      loading="eager"
-                     onerror="this.onerror=null; this.src='1.jpg'; this.style.display='block';">
-                <img src="1.jpg" alt="The Mediterranean Sea at night - a dark, endless expanse where dreams meet their final horizon" 
-                     style="display: none;"
-                     onerror="this.onerror=null; this.src='1.jpeg'; this.style.display='block';">
-                <img src="1.jpeg" alt="The Mediterranean Sea at night - a dark, endless expanse where dreams meet their final horizon" 
-                     style="display: none;"
-                     onerror="this.onerror=null; document.getElementById('header-fallback').style.display='flex';">
+                     id="main-image-1">
                 
                 <!-- Fallback content -->
-                <div id="header-fallback" class="image-fallback" style="background: linear-gradient(135deg, #000810 0%, #001020 100%);">
+                <div id="header-fallback" class="image-fallback" style="background: linear-gradient(135deg, #000810 0%, #001020 100%); display: none;">
                     <div class="fallback-text">
                         <span class="fallback-title">THE MEDITERRANEAN</span>
                         <span class="fallback-subtitle">Where hope drowns in silence</span>
@@ -744,19 +743,13 @@
         </div>
 
         <div class="section-image fade-in">
-            <!-- Intro image - PNG VERSION -->
+            <!-- Intro image - USING YOUR PNG FILE -->
             <img src="2.png" alt="Empty space where a life once was - the beginning of disappearance" 
                  loading="lazy"
-                 onerror="this.onerror=null; this.src='2.jpg'; this.style.display='block';">
-            <img src="2.jpg" alt="Empty space where a life once was - the beginning of disappearance" 
-                 style="display: none;"
-                 onerror="this.onerror=null; this.src='2.jpeg'; this.style.display='block';">
-            <img src="2.jpeg" alt="Empty space where a life once was - the beginning of disappearance" 
-                 style="display: none;"
-                 onerror="this.onerror=null; this.style.display='none'; document.getElementById('intro-fallback').style.display='flex';">
+                 id="image-2">
             
             <!-- Fallback -->
-            <div id="intro-fallback" class="image-fallback" style="background: linear-gradient(45deg,#0a0a0a,#1a1a1a);">
+            <div id="intro-fallback" class="image-fallback" style="background: linear-gradient(45deg,#0a0a0a,#1a1a1a); display: none;">
                 <div class="fallback-text">
                     <span class="fallback-title">THE BEGINNING OF DISAPPEARANCE</span>
                     <span class="fallback-subtitle">Where presence becomes absence</span>
@@ -779,19 +772,13 @@
         <h2 class="fade-in">The Leaving</h2>
         
         <div class="section-image fade-in">
-            <!-- Leaving image - PNG VERSION -->
+            <!-- Leaving image - USING YOUR PNG FILE -->
             <img src="3.png" alt="The quiet departure - last goodbyes whispered in darkness" 
                  loading="lazy"
-                 onerror="this.onerror=null; this.src='3.jpg'; this.style.display='block';">
-            <img src="3.jpg" alt="The quiet departure - last goodbyes whispered in darkness" 
-                 style="display: none;"
-                 onerror="this.onerror=null; this.src='3.jpeg'; this.style.display='block';">
-            <img src="3.jpeg" alt="The quiet departure - last goodbyes whispered in darkness" 
-                 style="display: none;"
-                 onerror="this.onerror=null; this.style.display='none'; document.getElementById('leaving-fallback').style.display='flex';">
+                 id="image-3">
             
             <!-- Fallback -->
-            <div id="leaving-fallback" class="image-fallback" style="background: linear-gradient(45deg,#0c0806,#1c140f);">
+            <div id="leaving-fallback" class="image-fallback" style="background: linear-gradient(45deg,#0c0806,#1c140f); display: none;">
                 <div class="fallback-text">
                     <span class="fallback-title">THE SILENT DEPARTURE</span>
                     <span class="fallback-subtitle">Where home becomes memory</span>
@@ -812,19 +799,13 @@
         <h2 class="fade-in">The Desert: Where Bones Blossom</h2>
         
         <div class="section-image fade-in">
-            <!-- Desert image - PNG VERSION -->
+            <!-- Desert image - USING YOUR PNG FILE -->
             <img src="4.png" alt="The Sahara Desert - endless golden sands where journeys break and bones bloom" 
                  loading="lazy"
-                 onerror="this.onerror=null; this.src='4.jpg'; this.style.display='block';">
-            <img src="4.jpg" alt="The Sahara Desert - endless golden sands where journeys break and bones bloom" 
-                 style="display: none;"
-                 onerror="this.onerror=null; this.src='4.jpeg'; this.style.display='block';">
-            <img src="4.jpeg" alt="The Sahara Desert - endless golden sands where journeys break and bones bloom" 
-                 style="display: none;"
-                 onerror="this.onerror=null; this.style.display='none'; document.getElementById('desert-fallback').style.display='flex';">
+                 id="image-4">
             
             <!-- Fallback -->
-            <div id="desert-fallback" class="image-fallback" style="background: linear-gradient(45deg,#2a241c,#3a3424);">
+            <div id="desert-fallback" class="image-fallback" style="background: linear-gradient(45deg,#2a241c,#3a3424); display: none;">
                 <div class="fallback-text">
                     <span class="fallback-title">THE DESERT THAT CONSUMES</span>
                     <span class="fallback-subtitle">Where bones bloom in the sand</span>
@@ -845,19 +826,13 @@
         <h2 class="fade-in">Libya: The Factory of Broken Men</h2>
         
         <div class="section-image fade-in">
-            <!-- Libya image - PNG VERSION -->
+            <!-- Libya image - USING YOUR PNG FILE -->
             <img src="5.png" alt="Libyan detention center - the factory where humanity is unmade" 
                  loading="lazy"
-                 onerror="this.onerror=null; this.src='5.jpg'; this.style.display='block';">
-            <img src="5.jpg" alt="Libyan detention center - the factory where humanity is unmade" 
-                 style="display: none;"
-                 onerror="this.onerror=null; this.src='5.jpeg'; this.style.display='block';">
-            <img src="5.jpeg" alt="Libyan detention center - the factory where humanity is unmade" 
-                 style="display: none;"
-                 onerror="this.onerror=null; this.style.display='none'; document.getElementById('libya-fallback').style.display='flex';">
+                 id="image-5">
             
             <!-- Fallback -->
-            <div id="libya-fallback" class="image-fallback" style="background: linear-gradient(45deg,#1a1a1a,#2a2a2a);">
+            <div id="libya-fallback" class="image-fallback" style="background: linear-gradient(45deg,#1a1a1a,#2a2a2a); display: none;">
                 <div class="fallback-text">
                     <span class="fallback-title">THE FACTORY OF BROKEN DREAMS</span>
                     <span class="fallback-subtitle">Where humanity becomes currency</span>
@@ -878,19 +853,13 @@
         <h2 class="fade-in">The Crossing: Prayers in a Rubber Dinghy</h2>
         
         <div class="section-image fade-in">
-            <!-- Crossing image - PNG VERSION -->
+            <!-- Crossing image - USING YOUR PNG FILE -->
             <img src="6.png" alt="Mediterranean crossing - the final gamble on an unforgiving sea" 
                  loading="lazy"
-                 onerror="this.onerror=null; this.src='6.jpg'; this.style.display='block';">
-            <img src="6.jpg" alt="Mediterranean crossing - the final gamble on an unforgiving sea" 
-                 style="display: none;"
-                 onerror="this.onerror=null; this.src='6.jpeg'; this.style.display='block';">
-            <img src="6.jpeg" alt="Mediterranean crossing - the final gamble on an unforgiving sea" 
-                 style="display: none;"
-                 onerror="this.onerror=null; this.style.display='none'; document.getElementById('crossing-fallback').style.display='flex';">
+                 id="image-6">
             
             <!-- Fallback -->
-            <div id="crossing-fallback" class="image-fallback" style="background: linear-gradient(45deg,#001830,#002040);">
+            <div id="crossing-fallback" class="image-fallback" style="background: linear-gradient(45deg,#001830,#002040); display: none;">
                 <div class="fallback-text">
                     <span class="fallback-title">THE GAMBLE WITH THE SEA</span>
                     <span class="fallback-subtitle">Where hope meets the abyss</span>
@@ -913,19 +882,13 @@
         <h2 class="fade-in">Survival Italy: The Bitter Green</h2>
         
         <div class="section-image fade-in">
-            <!-- Italy image - PNG VERSION -->
+            <!-- Italy image - USING YOUR PNG FILE -->
             <img src="7.png" alt="Reception center in Italy - where dreams meet bureaucracy" 
                  loading="lazy"
-                 onerror="this.onerror=null; this.src='7.jpg'; this.style.display='block';">
-            <img src="7.jpg" alt="Reception center in Italy - where dreams meet bureaucracy" 
-                 style="display: none;"
-                 onerror="this.onerror=null; this.src='7.jpeg'; this.style.display='block';">
-            <img src="7.jpeg" alt="Reception center in Italy - where dreams meet bureaucracy" 
-                 style="display: none;"
-                 onerror="this.onerror=null; this.style.display='none'; document.getElementById('italy-fallback').style.display='flex';">
+                 id="image-7">
             
             <!-- Fallback -->
-            <div id="italy-fallback" class="image-fallback" style="background: linear-gradient(45deg,#1a202a,#2a303a);">
+            <div id="italy-fallback" class="image-fallback" style="background: linear-gradient(45deg,#1a202a,#2a303a); display: none;">
                 <div class="fallback-text">
                     <span class="fallback-title">THE REALITY OF ARRIVAL</span>
                     <span class="fallback-subtitle">Where dreams meet bureaucracy</span>
@@ -953,19 +916,13 @@
         <h2 class="fade-in">Is It Greener?</h2>
         
         <div class="section-image fade-in">
-            <!-- Question image - PNG VERSION -->
+            <!-- Question image - USING YOUR PNG FILE -->
             <img src="8.png" alt="The eternal question - two worlds, one impossible choice" 
                  loading="lazy"
-                 onerror="this.onerror=null; this.src='8.jpg'; this.style.display='block';">
-            <img src="8.jpg" alt="The eternal question - two worlds, one impossible choice" 
-                 style="display: none;"
-                 onerror="this.onerror=null; this.src='8.jpeg'; this.style.display='block';">
-            <img src="8.jpeg" alt="The eternal question - two worlds, one impossible choice" 
-                 style="display: none;"
-                 onerror="this.onerror=null; this.style.display='none'; document.getElementById('question-fallback').style.display='flex';">
+                 id="image-8">
             
             <!-- Fallback -->
-            <div id="question-fallback" class="image-fallback" style="background: linear-gradient(45deg,#1a2a2a,#2a3a3a);">
+            <div id="question-fallback" class="image-fallback" style="background: linear-gradient(45deg,#1a2a2a,#2a3a3a); display: none;">
                 <div class="fallback-text">
                     <span class="fallback-title">THE ETERNAL QUESTION</span>
                     <span class="fallback-subtitle">Two worlds, one impossible choice</span>
@@ -990,19 +947,13 @@
         <h2 class="fade-in">The Unending Tide</h2>
         
         <div class="section-image fade-in">
-            <!-- Final tide image - PNG VERSION -->
+            <!-- Final tide image - USING YOUR PNG FILE -->
             <img src="9.png" alt="Endless sea waves - the unending cycle of hope and loss" 
                  loading="lazy"
-                 onerror="this.onerror=null; this.src='9.jpg'; this.style.display='block';">
-            <img src="9.jpg" alt="Endless sea waves - the unending cycle of hope and loss" 
-                 style="display: none;"
-                 onerror="this.onerror=null; this.src='9.jpeg'; this.style.display='block';">
-            <img src="9.jpeg" alt="Endless sea waves - the unending cycle of hope and loss" 
-                 style="display: none;"
-                 onerror="this.onerror=null; this.style.display='none'; document.getElementById('tide-fallback').style.display='flex';">
+                 id="image-9">
             
             <!-- Fallback -->
-            <div id="tide-fallback" class="image-fallback" style="background: linear-gradient(45deg,#000810,#001020,#000000);">
+            <div id="tide-fallback" class="image-fallback" style="background: linear-gradient(45deg,#000810,#001020,#000000); display: none;">
                 <div class="fallback-text">
                     <span class="fallback-title">THE UNENDING CYCLE</span>
                     <span class="fallback-subtitle">The sea that never forgets</span>
@@ -1028,10 +979,7 @@
         <div class="colophon fade-in">
             <div class="author-photo-container">
                 <img src="ngozib.JPG" alt="Uzor Blessing Ngozi, author and cultural historian" 
-                     onerror="this.onerror=null; this.src='ngozib.jpg'; this.style.display='block';">
-                <img src="ngozib.jpg" alt="Uzor Blessing Ngozi, author and cultural historian" 
-                     style="display: none;"
-                     onerror="this.onerror=null; this.src='ngozib.png'; this.style.display='block';">
+                     id="author-photo">
             </div>
             
             <div class="author-name">Uzor Blessing Ngozi</div>
@@ -1059,31 +1007,42 @@
     </div>
 
     <script>
-        // Image loading and error handling script
+        // Simplified image handling script
         document.addEventListener('DOMContentLoaded', function() {
             const images = document.querySelectorAll('img');
             const loadingIndicators = document.querySelectorAll('.image-loading');
             
-            // Hide loading indicators after images load
+            console.log('Total images found:', images.length);
+            
+            // Hide loading indicators when images load
             images.forEach(img => {
                 img.addEventListener('load', function() {
+                    console.log('Image loaded successfully:', this.src);
                     const parent = this.parentElement;
                     const loadingIndicator = parent.querySelector('.image-loading');
                     if (loadingIndicator) {
                         loadingIndicator.style.display = 'none';
                     }
-                    
-                    // Hide all other images in the same container
-                    const siblingImages = parent.querySelectorAll('img');
-                    siblingImages.forEach(sibling => {
-                        if (sibling !== this) {
-                            sibling.style.display = 'none';
-                        }
-                    });
                 });
                 
                 img.addEventListener('error', function() {
-                    console.log('Image failed to load:', this.src);
+                    console.error('Failed to load image:', this.src);
+                    
+                    // Show fallback for this specific image
+                    const parent = this.parentElement;
+                    const fallbackId = this.id.replace('image-', '').replace('main-image-', '') + '-fallback';
+                    const fallback = document.getElementById(fallbackId);
+                    
+                    if (fallback) {
+                        fallback.style.display = 'flex';
+                        this.style.display = 'none';
+                    }
+                    
+                    // Hide loading indicator
+                    const loadingIndicator = parent.querySelector('.image-loading');
+                    if (loadingIndicator) {
+                        loadingIndicator.style.display = 'none';
+                    }
                 });
             });
             
@@ -1092,10 +1051,9 @@
                 loadingIndicators.forEach(indicator => {
                     indicator.style.display = 'none';
                 });
-            }, 3000);
+            }, 5000);
             
-            // Debug: Log which images are loading
-            console.log('Total images on page:', images.length);
+            // Debug: Check all image sources
             images.forEach((img, index) => {
                 console.log(`Image ${index + 1}: ${img.src}`);
             });
