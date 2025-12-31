@@ -33,6 +33,27 @@
             margin-bottom: 40px;
             padding-bottom: 30px;
             border-bottom: 1px solid #eee;
+            position: relative;
+        }
+
+        .header-image {
+            width: 100%;
+            height: 300px;
+            background-color: #e0e7ff;
+            margin-bottom: 30px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-style: italic;
+            overflow: hidden;
+        }
+
+        .header-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         h1 {
@@ -90,6 +111,26 @@
             width: 80%;
         }
 
+        .section-image {
+            width: 100%;
+            height: 250px;
+            background-color: #f0f0f0;
+            margin: 30px 0;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-style: italic;
+            overflow: hidden;
+        }
+
+        .section-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
         .quote {
             font-size: 1.3rem;
             padding: 30px;
@@ -126,6 +167,64 @@
             color: #666;
         }
 
+        .author-section {
+            margin-top: 60px;
+            padding: 30px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            border-left: 4px solid #3498db;
+        }
+
+        .author-title {
+            font-size: 1.3rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .author-bio {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .author-contact {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .final-image {
+            width: 100%;
+            height: 300px;
+            background-color: #e8f4f8;
+            margin: 40px 0;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-style: italic;
+            overflow: hidden;
+        }
+
+        .final-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .image-caption {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: -25px;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
         @media (max-width: 768px) {
             body {
                 padding: 10px;
@@ -147,6 +246,12 @@
                 font-size: 1.1rem;
                 padding: 15px;
             }
+            
+            .header-image,
+            .section-image,
+            .final-image {
+                height: 200px;
+            }
         }
 
         /* Custom styling for emphasis */
@@ -165,6 +270,11 @@
 <body>
     <div class="container">
         <header>
+            <div class="header-image">
+                <!-- Replace with your image -->
+                <!-- <img src="path/to/header-image.jpg" alt="The Mediterranean Sea"> -->
+                <div>Header Image: The Mediterranean Sea at dusk</div>
+            </div>
             <h1>The Only Hope: A Sea of Dreams and Ghosts</h1>
             <div class="subtitle">A Journey Across the Mediterranean</div>
         </header>
@@ -172,6 +282,13 @@
         <div class="intro">
             In 2017, my neighbor's daughter disappeared. One day, Ajoke was selling <em>akara</em> by the roadside, laughing in that way that made her whole body shake. The next day, she was just... gone. No note. No explanation. Just an empty bed and a pair of slippers left neatly by the door.
         </div>
+
+        <div class="section-image">
+            <!-- Replace with your image -->
+            <!-- <img src="path/to/intro-image.jpg" alt="Empty slippers by the door"> -->
+            <div>Image: A pair of slippers by an empty bed</div>
+        </div>
+        <div class="image-caption">The beginning of disappearance</div>
 
         <p>Her parents searched—oh God, how they searched. They called every relative, visited every friend, even went to churches and <em>babalawos</em>. For three years, Ajoke was a ghost in our conversations, a painful pause in her mother's laughter, a phantom shape in the doorway every evening when the streetlights flickered on.</p>
 
@@ -182,6 +299,14 @@
         <div class="section-divider"></div>
 
         <h2>The Leaving</h2>
+        
+        <div class="section-image">
+            <!-- Replace with your image -->
+            <!-- <img src="path/to/leaving-image.jpg" alt="Goodbye scene"> -->
+            <div>Image: A quiet goodbye at night</div>
+        </div>
+        <div class="image-caption">The silent departure</div>
+
         <p>The decision to leave doesn't happen in a moment. It ferments. It grows in the stomach of a graduate driving a <em>keke</em> for 14 hours a day. It whispers to the tailor whose shop was washed away in the last rains. It shouts at the young man watching his friends picked up by soldiers and never returning. The push isn't just poverty; it's the slow, suffocating collapse of possibility. The future isn't just bleak; it's a wall.</p>
 
         <p>So they go. They sell the family plot—the one their great-grandfather farmed. The mother gives her gold, the last physical memory of her own mother. The money is counted, folded, handed over to a man in sharp shoes who promises "safe passage." The goodbye is not dramatic. It is a quiet hug, averted eyes, because to look too long would be to see the terror and maybe, maybe turn back. They leave at night. They become ghosts before they ever reach the sea.</p>
@@ -189,6 +314,14 @@
         <div class="section-divider"></div>
 
         <h2>The Desert: Where Bones Blossom</h2>
+        
+        <div class="section-image">
+            <!-- Replace with your image -->
+            <!-- <img src="path/to/desert-image.jpg" alt="Sahara Desert"> -->
+            <div>Image: The vast, unforgiving Sahara Desert</div>
+        </div>
+        <div class="image-caption">The desert that consumes dreams</div>
+
         <p>The Sahara is not empty. It is full of ghosts. Our guides told us—the ones who came back broken—that the desert blooms with bones. Shoes, mostly. Single, weathered sneakers marking trails where people walked until they could not. The heat is a physical violence. It doesn't just burn; it consumes. Throat, eyes, mind. People share water until the bottles are licked dry. When the pickup truck breaks down—and it always breaks down—the "connection man" on the phone says, "Walk. North."</p>
 
         <p>Some are left behind. Not out of cruelty, but out of a brutal, silent arithmetic of survival. You cannot carry a man who cannot stand when your own legs are trembling mirages. You weep as you walk away. You promise to send help. You never can. The desert swallows signals, promises, people. By the time you reach Libya, your humanity is already cracked. The desert has scraped you raw.</p>
@@ -196,6 +329,14 @@
         <div class="section-divider"></div>
 
         <h2>Libya: The Factory of Broken Men</h2>
+        
+        <div class="section-image">
+            <!-- Replace with your image -->
+            <!-- <img src="path/to/libya-image.jpg" alt="Libyan detention center"> -->
+            <div>Image: A crowded detention center in Libya</div>
+        </div>
+        <div class="image-caption">The factory of broken dreams</div>
+
         <p>If the desert tries to kill you, Libya tries to unmake you. This is the open secret, the hellish purgatory in the brochure. You are not a traveler here. You are <strong>currency</strong>. You are grabbed, sold from one militia to another. You work—forced labor—to pay for your own captivity. The stories that filter back are not stories; they are wounds. Beatings for sport. Ransom calls to your weeping mother back in Nigeria, her voice tinny and shattered on the line. Crammed into warehouses where the air is thick with sweat, waste, and despair.</p>
 
         <p>Here, the <span class="sea-reference">Mediterranean</span>, which you have never seen, begins to glitter in your mind not as a danger, but as a deliverance. The sea becomes the only door out of the factory. You will risk the waves to escape the concrete. The decision is made in a dark cell: death by water is preferable to death by slow erasure.</p>
@@ -203,6 +344,14 @@
         <div class="section-divider"></div>
 
         <h2>The Crossing: Prayers in a Rubber Dinghy</h2>
+        
+        <div class="section-image">
+            <!-- Replace with your image -->
+            <!-- <img src="path/to/crossing-image.jpg" alt="Mediterranean crossing"> -->
+            <div>Image: A crowded rubber dinghy on rough seas</div>
+        </div>
+        <div class="image-caption">The gamble with the sea</div>
+
         <p>You see it finally, at night. The <span class="sea-reference">Mediterranean</span>. It is vast and black, merging with the sky. It does not look like water; it looks like oblivion. The boat is a joke. A flimsy rubber dinghy meant for 20 now holds 120 souls. You pay extra for a life jacket—a cheap, orange foam thing that you pray you never have to test. The engine sputters. The "captain" is a boy from Ghana who looks as terrified as you feel.</p>
 
         <p>You push off from the sand. For the first hour, there is silence, punctuated only by the putter of the engine and the sound of vomiting. The boat sits so low, every small wave kisses the rim. When the first real swell comes, a collective gasp sucks the air out of the boat. Water sloshes at your ankles. Then your calves. Panic is a smell—sharp, metallic. Someone begins to pray in a language you don't understand. Another sings a hymn. The sound is swallowed by the wind.</p>
@@ -212,6 +361,14 @@
         <div class="section-divider"></div>
 
         <h2>Survival Italy: The Bitter Green</h2>
+        
+        <div class="section-image">
+            <!-- Replace with your image -->
+            <!-- <img src="path/to/italy-image.jpg" alt="Reception center in Italy"> -->
+            <div>Image: A migrant reception center in Italy</div>
+        </div>
+        <div class="image-caption">The reality of arrival</div>
+
         <p>You arrive. You are processed, fingerprinted, given a foil blanket that crinkles like laughter. You are taken to a <em>centro di accoglienza</em>—a reception center. It is clean, and that itself is a shock. But the dream quickly hardens into a new reality.</p>
 
         <p>The "greener pasture" is a crowded dormitory. It is paperwork in a language you cannot read. It is waiting. Waiting for the <em>permesso di soggiorno</em>. Waiting for a work permit. Waiting for a "yes" or a "no" that will decide your entire life. You hear stories from those who came before you: the Nigerian man with a PhD cleaning toilets for cash; the woman from Ghana paying 500 euros a month to sleep in a windowless basement; the racism that is not shouted, but whispered in cold service and closed doors.</p>
@@ -225,6 +382,14 @@
         </div>
 
         <h2>Is It Greener?</h2>
+        
+        <div class="section-image">
+            <!-- Replace with your image -->
+            <!-- <img src="path/to/question-image.jpg" alt="Contemplative moment"> -->
+            <div>Image: A person looking at two different landscapes</div>
+        </div>
+        <div class="image-caption">The eternal question</div>
+
         <p>So we return to Ajoke's question, to the question etched on every face that boards those doomed dinghies: <strong>Is it really greener on the other side?</strong></p>
 
         <p>For the ones who did not make it—the thousands whose names are recorded only as "unknown migrant" in Italian ledgers, whose bodies are buried in numbered graves in Lampedusa, or who simply vanished into the deep—the answer is a silent, blue void.</p>
@@ -236,14 +401,39 @@
         <div class="section-divider"></div>
 
         <h2>The Unending Tide</h2>
+        
+        <div class="section-image">
+            <!-- Replace with your image -->
+            <!-- <img src="path/to/tide-image.jpg" alt="Endless sea waves"> -->
+            <div>Image: Waves crashing on the shore</div>
+        </div>
+        <div class="image-caption">The unending cycle</div>
+
         <p>Ajoke is still in Italy. She works in an elderly care home. She sends money every month. Her parents have rebuilt their house. From the outside, it is a success story. But when I spoke to her last, her voice was thin over the phone. "Tell them not to come," she said, a desperate whisper. "Unless there is truly no hope at all. Tell them the sea has mercy for no one."</p>
 
         <p>But they will still come. Because when the back is against the wall, a slim chance in a distant land will always look brighter than no chance at home. The Mediterranean will continue to be what it has become: a liquid border, a final judge, a cemetery of dreams, and for a desperate few, the only hope left on earth.</p>
 
         <p>The tide, it seems, is unending. And so is the hope. And so are the ghosts.</p>
 
+        <div class="final-image">
+            <!-- Replace with your image -->
+            <!-- <img src="path/to/final-image.jpg" alt="Sunset over the Mediterranean"> -->
+            <div>Image: Sunset over the Mediterranean Sea</div>
+        </div>
+        <div class="image-caption">The sea that gives and takes</div>
+
         <div class="dedication">
             Dedicated to the ones who left, the ones who arrived, and the ones who became the sea.
+        </div>
+
+        <div class="author-section">
+            <div class="author-title">About the Writer</div>
+            <div class="author-bio">
+                This piece was written by someone who has witnessed the empty spaces left behind in Nigerian communities—the vacant chairs at dinner tables, the hushed conversations about missing sons and daughters, the Western Union receipts that tell only half the story. The writer has listened to the fragments of journeys from those who returned broken and those who made it but carry the weight of the crossing in their silence. This is not just a story; it is a collection of truths gathered from the echoes of countless departures and arrivals.
+            </div>
+            <div class="author-contact">
+                Contact: [Your email or contact information]
+            </div>
         </div>
 
         <div class="keywords">
