@@ -167,33 +167,77 @@
             color: #666;
         }
 
-        .author-section {
-            margin-top: 60px;
-            padding: 30px;
-            background-color: #f9f9f9;
-            border-radius: 4px;
-            border-left: 4px solid #3498db;
+        .colophon {
+            margin-top: 80px;
+            padding: 40px;
+            background: linear-gradient(135deg, #f9f9f9 0%, #eef2f3 100%);
+            border-radius: 8px;
+            border-left: 5px solid #2c3e50;
+            text-align: center;
         }
 
-        .author-title {
-            font-size: 1.3rem;
+        .author-photo-container {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 25px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .author-photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .author-photo-container:hover img {
+            transform: scale(1.05);
+        }
+
+        .author-name {
+            font-size: 1.8rem;
             color: #2c3e50;
-            margin-bottom: 15px;
+            margin-bottom: 5px;
             font-weight: bold;
         }
 
-        .author-bio {
+        .author-title {
             font-size: 1.1rem;
-            line-height: 1.6;
-            color: #555;
+            color: #3498db;
+            margin-bottom: 30px;
+            font-style: italic;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
         }
 
-        .author-contact {
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            font-size: 0.9rem;
-            color: #666;
+        .author-bio {
+            text-align: left;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #444;
+        }
+
+        .author-bio p {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .manuscript-footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .manuscript-footer p {
+            margin-bottom: 15px;
+            text-align: center;
         }
 
         .final-image {
@@ -251,6 +295,19 @@
             .section-image,
             .final-image {
                 height: 200px;
+            }
+            
+            .colophon {
+                padding: 25px;
+            }
+            
+            .author-photo-container {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .author-name {
+                font-size: 1.5rem;
             }
         }
 
@@ -426,15 +483,31 @@
             Dedicated to the ones who left, the ones who arrived, and the ones who became the sea.
         </div>
 
-        <div class="author-section">
-            <div class="author-title">About the Writer</div>
-            <div class="author-bio">
-                This piece was written by someone who has witnessed the empty spaces left behind in Nigerian communities—the vacant chairs at dinner tables, the hushed conversations about missing sons and daughters, the Western Union receipts that tell only half the story. The writer has listened to the fragments of journeys from those who returned broken and those who made it but carry the weight of the crossing in their silence. This is not just a story; it is a collection of truths gathered from the echoes of countless departures and arrivals.
+        <!-- Author Section -->
+        <div class="colophon">
+            <!-- PHOTO SPACE 7: Author photo -->
+            <div class="author-photo-container">
+                <img src="ngozib.JPG" alt="Uzor Blessing Ngozi, author and cultural historian">
             </div>
-            <div class="author-contact">
-                Contact: [Your email or contact information]
+            
+            <div class="author-name">Uzor Blessing Ngozi</div>
+            <div class="author-title">Writer, Mathematician & Data Scientist</div>
+            
+            <div class="author-bio">
+                <p>I am a Mastercard Foundation Scholar and Master's student in Mathematical Sciences, specializing in Data Science at the African Institute for Mathematical Sciences. As the founder of READAFRICA, I maintain a blog dedicated to preserving African stories at their core: our traditions, cultures, and the artistry of our origin.</p>
+                <p>My research focuses on the development and application of computational models and intelligent systems to enhance learning outcomes and advance educational equity. I investigate how machine learning architectures and statistical modeling frameworks can be leveraged to personalize educational pathways, predict student performance, and optimize pedagogical interventions.</p>
+
+                <p>The core of my work lies at the intersection of learning analytics, educational data mining, and algorithmic fairness. I place a specific emphasis on deploying these technologies to address systemic disparities in educational access and achievement across the African continent.</p>
+
+                <p>The overarching goal is to engineer data-driven, scalable solutions that translate complex educational datasets into actionable insights for policymakers, administrators, and educators. Through this work, I aim to contribute to the creation of more adaptive, effective, and equitable learning ecosystems.</p>
             </div>
         </div>
+        
+        <footer class="manuscript-footer">
+            <p>© 2025 READAFRICA</p>
+            <p>This was compiled from oral histories, archival documents, and linguistic research. It stands as a record of truth for future generations.</p>
+            <p style="margin-top: 10px;">This document may be reproduced for educational purposes.</p>
+        </footer>
 
         <div class="keywords">
             <strong>Tags:</strong> Mediterranean crossing, migration, Nigeria to Italy, human journey, survival, hope, tragedy, diaspora, dreams, reality
